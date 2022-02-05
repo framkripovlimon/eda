@@ -1,0 +1,83 @@
+.search {
+    margin-top: 56px;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid #cfcbcb;
+    border-radius: 0;
+}
+.search:focus {
+    outline: none;
+    border-color: #000;
+}
+.search::placeholder {
+    color: #626262;
+    opacity: .5;
+}
+h1 {
+    line-height: 34px;
+    font-size: 22px;
+    margin-top: 56px;
+
+}
+h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0 4px 0;
+}
+.price {
+    color: #626262;
+    font-size: 14px;
+    line-height: 21px;
+}
+.delivery {
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 4px;
+}
+.restourant-item {
+    margin-top: 36px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+}
+.restourant-item img {
+    width: 100%;
+    height: auto;
+}
+.line-3 {
+    display: flex;
+}
+.restourants {
+    margin-bottom: 80px;
+}
+@media (min-width: 576px) {
+    .restourants {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    .restourant-item {
+        flex-basis: 50%;
+    }
+    /* только для нечётных */
+    .restourant-item:nth-child(2n+1) {
+        padding-right: 8px;
+    }
+    /* только для чётных */
+    .restourant-item:nth-child(2n) {
+        padding-left: 8px;
+    }
+}
+@media (min-width: 992px) {
+    .restourants {
+        margin: 0 -8px 80px -8px;
+    }
+    .restourant-item {
+        flex-basis: 33.3333%;
+        padding: 0 8px 0 8px;
+    }
+}

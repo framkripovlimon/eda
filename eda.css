@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.container {
+    position: relative;
+}
+.up-button {
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    background: url(img/arrow.svg) no-repeat center center #59BD5A;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+@media (min-width: 768px) {
+    .up-button {
+        width: 80px;
+        height: 80px;
+    }
+}
